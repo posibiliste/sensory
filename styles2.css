@@ -103,7 +103,7 @@ div p{
   /* slider */
 .range{
   display: inline-grid;
-  width: 80%;
+  width: 70%;
   height: 5.33rem;
   position: absolute;
   left: 50%;
