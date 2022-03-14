@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensory Environment Self-Evaluation Tool</title>
+    <link rel="stylesheet" href="styles2.css">
+  </head>
+  <body>
+   <header>
+    <h1> Sensory Environment Self-Evaluation Tool </h1>
+    <label for="progressbar" id="textprogress">Tool progress:</label>
+    <progress id="progressbar" max="11" value="1">(Step 1 of circa 11)</progress>
+   </header>
+   <section class="col-2">
+<!--Q1-->
+   <div class="block-question">
+     <div>
+       <h3 class="question"> Question </h3>
+     </div>
+    <div>
+      <p id="phrase">zero</p>
+    </div>
+    <div class="range">
+     <div class="sliderValue">
+      <span id="q1">0</span>
+     </div>
+        <!--text value of sliders-->
+     <div class="field">
+      <div class="value left"><p class="sign">-</p></div>
+      <input id="q1in" oninput="showPhrase(this.value)" type="range" min="0" max="6" value="0" steps="1">
+      <div class="value right"><p class="sign">+</p></div>
+     </div>
+    </div>
+  </div>
+<!--Q2-->
+  <div class="block-question">
+   <div>
+      <h3 class="question"> Question </h3>
+   </div>
+   <div>
+     <p> phrase </p>
+   </div>
+   <div class="range">
+    <div class="sliderValue2">
+     <span id="q2">3</span>
+    </div>
+       <!--text value of sliders-->
+    <div class="field">
+     <div class="value left"><p class="emoji">&#128522;</p></div>
+     <input id="q2in" type="range" min="0" max="6" value="3" steps="1">
+     <div class="value right"><p class="emoji">&#128534;</p></div>
+    </div>
+    </div>
+   </div>
+   
+  </section>
+
+ <!-- buttons -->
+ <footer>
+ <section class="col-1 buttons">
+   <button type="button" class="previous">
+     <a href="#">&laquo; Previous</a>
+   </button>
+ </section>
+ <section class="col-3 buttons">
+   <button type="button" class="next">
+     <a href="#"> Next &raquo;</a>
+   </button>
+</section>
+</footer>
+
+
+<script src="slider.js"></script>
+<script src="phrase.js"></script>
+
+
+
+  </body>
+</html>
